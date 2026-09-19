@@ -325,10 +325,10 @@ def make_semi_circle_gauge(score: float, theme: dict):
         go.Indicator(
             mode="gauge+number",
             value=score,
-            number={"suffix": " ★", "font": {"size": 26, "color": theme["green"]}},
+            number={"suffix": " ★", "font": {"size": 24, "color": theme["green"]}},
             gauge={
                 "axis": {"range": [0, 1], "tickwidth": 1, "tickcolor": theme["text"]},
-                "bar": {"color": theme["cyan"], "width": 8},
+                "bar": {"color": theme["cyan"], "thickness": 0.25},
                 "shape": "angular",
                 "bgcolor": theme["bar"],
                 "borderwidth": 0,
